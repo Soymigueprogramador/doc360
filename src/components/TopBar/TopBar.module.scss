@@ -1,0 +1,29 @@
+
+@import "../../assets/constants.scss";
+
+.topBar {
+    display: flex;
+    gap: 42px;
+    background-color: #1b5196;
+    box-sizing: border-box;
+    padding: 20px 60px;
+    height: 69px;
+
+    svg {
+        path {
+            fill: #fafafa;
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-desktop) {
+    .topBar {
+        height: 96px;
+    }
+}
+
+@media screen and (min-width: $media-query-desktop) {
+    .topBar {
+        display: none;
+    }
+}

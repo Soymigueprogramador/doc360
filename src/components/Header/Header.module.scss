@@ -1,0 +1,105 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+
+    .user_actions{
+        display:flex;
+        flex-direction: row;
+        gap:32px;
+
+
+        .user_info{
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 48px;
+            color: #222121;
+            gap:24px;
+
+        
+            .user_initials{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #1B5196;
+                width: 67px;
+                height: 67px;
+                box-shadow: 0 4px  4px 0 rgba(0, 0, 0, 0.25);
+                border-radius: 50%;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 42px;
+                color: #FAFAFA;
+                position: relative;
+
+                .edit_icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position:absolute ;
+                    background-color: #7BB6B2;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50px;
+                    left: 53px;
+                    top: 0px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #91C2BF;
+                    }
+                }
+    
+            }
+    
+    
+        }
+
+    }
+
+    .search_bar{
+        position: relative;
+        width: 433px;
+
+        .search{
+            background-color: #FAFAFA;
+            width: 100%;
+            height:56px;
+            border-radius: 8px;
+            border:1px solid #222121;
+            padding: 0 16px 0 16px;
+            box-shadow: 0 4px  4px 0 rgba(0, 0, 0, 0.25);
+            font-weight: 500;
+            size: 20px;
+            line-height: 30px;
+            color: #B1AEAE;
+        }
+        .icon{
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            
+        }
+
+    }
+
+    button{
+        padding: 0;
+    }
+
+}
+.settings {
+    position: relative;
+  }
+  

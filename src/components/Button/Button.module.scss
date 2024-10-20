@@ -1,0 +1,41 @@
+
+.button {
+    display: flex;
+    padding: 12px 14px;
+    gap: 2px;
+    background-color: #7bb6b2;
+    color: black;
+    border: none;
+    padding: 4px 60px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #91c2bf;
+    }
+
+    &.text {
+        background-color: transparent;
+        color: white;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &:disabled {
+        background-color: #b4b4b4;
+        color: #4f4f4f;
+        cursor: auto;
+
+        &.text {
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.581);
+        }
+    }
+}

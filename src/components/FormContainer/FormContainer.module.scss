@@ -1,0 +1,44 @@
+
+@import "../../assets/constants.scss";
+
+.formContainer {
+    padding: 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b5196;
+
+    .title {
+        padding: 8px 16px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fafafa;
+        border-bottom: 1px solid #fafafa;
+
+        h4 {
+            margin: 0;
+        }
+    }
+
+    .actionButtons {
+        padding-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: $media-query-desktop) {
+    .formContainer {
+        padding: 36px 92px;
+
+        .actionButtons {
+            flex-direction: row-reverse;
+            gap: 24px;
+        }
+    }
+}

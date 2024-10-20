@@ -1,0 +1,17 @@
+
+.icon {
+    path {
+        fill: black;
+    }
+
+    &.white {
+        path {
+            fill: white;
+        }
+    }
+    &.green{
+        path {
+            fill: #7BB6B2;;
+        }
+    }
+}

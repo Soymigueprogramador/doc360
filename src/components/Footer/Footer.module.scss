@@ -1,0 +1,81 @@
+
+@import "../../assets/constants.scss";
+
+.footer {
+    padding: 20px 16px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b5196;
+    width: 100%;
+    color: white;
+
+    p {
+        margin: 0;
+    }
+
+    .brand {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 64px;
+        }
+    }
+
+    .contact {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .logos {
+            display: flex;
+            gap: 8px;
+
+            svg {
+                width: 36px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-tablet) {
+    .footer {
+        gap: 64px;
+
+        .brand {
+            svg {
+                width: 120px;
+            }
+        }
+
+        .contact {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-desktop) {
+    .footer {
+        gap: 208px;
+
+        .brand {
+            font-size: 16px;
+            line-height: 18px;
+            gap: 24px;
+        }
+    }
+}
