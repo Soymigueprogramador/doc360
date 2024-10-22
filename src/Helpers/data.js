@@ -1,4 +1,3 @@
-
 export function mapValues(object) {
     return Object.keys(object);
 }

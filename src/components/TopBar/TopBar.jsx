@@ -1,4 +1,3 @@
-
 import { Icons } from "../Icons/Icons";
 import styles from "./TopBar.module.scss";
 import { useNavigate } from "react-router-dom";

@@ -1,0 +1,21 @@
+@import "../../../assets/constants.scss";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 258px;
+}
+
+@media screen and (min-width: $media-query-tablet) {
+    .form {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: $media-query-desktop) {
+    .form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

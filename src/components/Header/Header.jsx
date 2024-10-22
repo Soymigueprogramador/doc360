@@ -1,4 +1,3 @@
-
 import styles from "./Header.module.scss";
 import { useState } from "react";
 import { Icons } from "../Icons/Icons";

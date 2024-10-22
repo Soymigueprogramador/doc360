@@ -1,4 +1,3 @@
-
 import { Button } from "../Button/Button";
 import { Icons } from "../Icons/Icons";
 import { getMediaQuery } from "../../helpers/browser";

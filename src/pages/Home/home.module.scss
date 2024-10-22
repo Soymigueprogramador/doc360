@@ -1,0 +1,78 @@
+@import "../../assets/constants.scss";
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .article {
+            padding: 40px 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            flex-direction: column;
+            gap: 16px;
+
+            p {
+                margin: 0;
+            }
+
+            .lead {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .description {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .icon {
+                width: 70%;
+            }
+        }
+
+        .actionButtons {
+            padding-top: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-tablet) {
+    .home {
+        .content {
+            .article {
+                .lead {
+                    font-size: 24px;
+                    line-height: 26px;
+                }
+
+                .description {
+                    font-size: 22px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-desktop) {
+    .home {
+        .content {
+            flex-direction: row;
+
+            .actionButtons {
+                display: none;
+            }
+        }
+    }
+}

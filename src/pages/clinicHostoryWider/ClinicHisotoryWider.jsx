@@ -1,4 +1,4 @@
-import styles from "./ClinicHistoryWider.module.scss";
+//import styles from "./ClinicHistoryWider.module.scss";
 import { Footer } from "../../components/Footer/Footer";
 import { FormContainer } from "../../components/FormContainer/FormContainer";
 import {Input} from "../../components/Input/Input";

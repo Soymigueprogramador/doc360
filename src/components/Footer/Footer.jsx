@@ -1,4 +1,3 @@
-
 import { Icons } from "../Icons/Icons";
 import styles from "./Footer.module.scss";
 

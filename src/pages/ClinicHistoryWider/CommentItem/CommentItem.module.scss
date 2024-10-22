@@ -1,0 +1,20 @@
+.article_cometario{
+    width: 313px;
+    padding: 16px;
+    gap: 8px;
+    border-bottom: .5px solid #FAFAFA ;
+    
+    &:hover{
+        border-radius: 8px;
+        background-color: #1B5196;
+        border-bottom: transparent ;
+    }
+    p, time{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        color:#FAFAFA;
+    }
+
+
+}

@@ -1,0 +1,53 @@
+@import "../../assets/constants.scss";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 25px;
+
+    .illustrations {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+
+        .number {
+            width: 25%;
+        }
+
+        .image {
+            width: 50%;
+        }
+    }
+
+    .label {
+        color: #1b5196;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $media-query-tablet) {
+    .error {
+        .label {
+            font-size: 35px;
+            line-height: 38px;
+            max-width: 65%;
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-desktop) {
+    .error {
+        .label {
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+}

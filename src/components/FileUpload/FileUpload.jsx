@@ -1,4 +1,3 @@
-
 import styles from "./FileUpload.module.scss"
 import {Icons} from "../../components/Icons/Icons"
 

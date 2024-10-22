@@ -15,7 +15,7 @@ import {
     Twitter,
     Search,
     Edit,
-    Setting
+    Setting,
     Document,
     Comment,
     Close
