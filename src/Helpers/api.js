@@ -8,7 +8,7 @@ export async function fetchApi(url, method, body) {
     };
 
     const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}${url}`,
+        //`${import.meta.env.VITE_BACKEND_URL}${url}`,
         options
     );
 

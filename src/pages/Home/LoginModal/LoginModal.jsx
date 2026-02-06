@@ -34,7 +34,8 @@ export function LoginModal({ isOpen, onClose }) {
     const isSaveDisabled = false;
     const { setUser } = useContext(UserContext);
 
-    async function onLogin() {
+    {/*
+        async function onLogin() {
         try {
             setIsLoading(true);
             const data = await login({
@@ -57,6 +58,60 @@ export function LoginModal({ isOpen, onClose }) {
             setIsLoading(false);
         }
     }
+    */}
+
+
+
+
+    async function onLogin() {
+    try {
+        setIsLoading(true);
+
+        // ==========================
+        // CREDENCIALES HARDCODEADAS
+        // ==========================
+        const HARDCODED_USER = {
+            email: "yobebe@hotmail.com.ar",
+            password: "Miguel@12",
+        };
+
+        // Validación simple (opcional)
+        if (
+            values["email"].value !== HARDCODED_USER.email ||
+            values["password"].value !== HARDCODED_USER.password
+        ) {
+            throw new Error("Credenciales incorrectas");
+        }
+
+        // ==========================
+        // RESPUESTA MOCK DEL BACKEND
+        // ==========================
+        const data = {
+            access: "FAKE_ACCESS_TOKEN",
+            refresh: "FAKE_REFRESH_TOKEN",
+            user_id: 1,
+            username: HARDCODED_USER.email,
+        };
+
+        // Simula login exitoso
+        setUser({
+            refresh_token: data.refresh,
+            access_token: data.access,
+            user_id: data.user_id,
+            username: data.username,
+        });
+
+        history("/clinicHistory");
+        setIsLoading(false);
+    } catch (e) {
+        console.error("Login:error", e);
+        setIsLoading(false);
+        alert("Email o contraseña incorrectos");
+    }
+}
+
+
+
 
     return (
         <div className={`${styles.loginModal} ${isOpen ? styles.open : ""}`}>
