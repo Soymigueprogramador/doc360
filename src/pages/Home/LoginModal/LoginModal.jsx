@@ -28,7 +28,8 @@ const FormFields = {
 };
 
 export function LoginModal({ isOpen, onClose }) {
-    const history = useNavigate();
+    //const history = useNavigate();
+    const navigate = useNavigate();
     const [values, setValues] = useState(FormFields);
     const [isLoading, setIsLoading] = useState(false);
     const isSaveDisabled = false;
@@ -101,7 +102,8 @@ export function LoginModal({ isOpen, onClose }) {
             username: data.username,
         });
 
-        history("/clinicHistory");
+        //history("/clinicHistory");
+        navigate("/homeUsuarioSinHistoriaClinica");
         setIsLoading(false);
     } catch (e) {
         console.error("Login:error", e);

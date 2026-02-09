@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home, ErrorPage, Register, ClinicHistory,ClinicHistoryWider } from "../pages";
 import { MainGuard } from "./mainGuard";
+import HomeUsuarioSinHistoriaClinica from "../pages/HomeUsusariosSinHistoriaClinica/HomeUsusariosSinHistoriaClinica";
+
 
 export const Routes = createBrowserRouter([
     {
@@ -31,6 +33,11 @@ export const Routes = createBrowserRouter([
             </MainGuard>
         ),
     },
-    { path: "/clinicHistoryWider", element: <ClinicHistoryWider /> }
-    
+    { path: "/clinicHistoryWider", element: <ClinicHistoryWider /> },
+    {
+  path: "/homeUsuarioSinHistoriaClinica",
+  element: <HomeUsuarioSinHistoriaClinica />,
+},
+
+
 ]);
